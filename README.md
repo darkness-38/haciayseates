@@ -1,6 +1,6 @@
-# Haci Ayşe Ateş High School Website & Coding Club
+# Hacı Ayşe Ateş High School Website & Coding Club
 
-This project is the official website for **Haci Ayşe Ateş Anatolian High School** and its **Software Club**. It provides information about the school, its activities, and the coding club for students and visitors.
+This project is the official website for **Hacı Ayşe Ateş Anatolian High School** and its **Software Club**. It provides information about the school, its activities, and the coding club for students and visitors.
 
 ## Features
 
