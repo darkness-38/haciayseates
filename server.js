@@ -32,4 +32,4 @@ app.get("/kulup", (req, res) => {
   res.render("club");
 });
 
-app.listen(PORT, () => console.log(`🌐 Sunucu çalışıyor: http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Sunucu çalışıyor: http://localhost:${PORT}`));
