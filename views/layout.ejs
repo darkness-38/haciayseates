@@ -14,7 +14,11 @@
           <a href="/"><img src="/public/images/logo.jpg" alt="logo" class="logo-img"></a>
           <a class="site-title" href="/">Hacı Ayşe Ateş Anadolu Lisesi</a>
         </div>
-        <nav class="nav">
+        
+        <!-- Hamburger Menü Butonu (Sadece mobilde görünür) -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        
+        <nav class="nav" id="mainNav">
           <a href="/">Anasayfa</a>
           <a href="/hakkimizda">Hakkımızda</a>
           <a href="/projeler">Projeler</a>
@@ -23,11 +27,9 @@
         </nav>
       </div>
     </header>
-
     <main>
       <%- body %>
     </main>
-
     <footer class="footer">
       <div class="container footer-inner">
         <div class="footer-left">
@@ -40,7 +42,26 @@
         </div>
       </div>
     </footer>
+    
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById('mainNav');
+        nav.classList.toggle('active');
+      }
 
+      // Menü dışına tıklandığında menüyü kapat
+      document.addEventListener('click', function(event) {
+        const nav = document.getElementById('mainNav');
+        const menuToggle = document.querySelector('.menu-toggle');
+        
+        if (window.innerWidth <= 800) {
+          if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+            nav.classList.remove('active');
+          }
+        }
+      });
+    </script>
+    
     <script src="/public/js/main.js"></script>
   </body>
 </html>
